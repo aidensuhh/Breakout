@@ -27,7 +27,7 @@ To run the game, you need **Java 11 or later** and **JavaFX** set up on your mac
 
 4. **Run the game**:
 - If you're using Java 11 or later, make sure to configure the VM options in IntelliJ to include the path to the JavaFX SDK.
-- To do so, go to Run > Edit Configurations, and in the VM options, add:
+- To do so, go to Run > Edit Configurations > Add New Configuration > Application > Type "Game" for Main Class > Modify options > Add VM options, and in Program arguments,
   ```bash
   --module-path /path/to/javafx-sdk-XX/lib --add-modules javafx.controls,javafx.fxml
   ```
