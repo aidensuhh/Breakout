@@ -20,7 +20,7 @@ import java.io.*;
 import java.util.Random; // Random Class From Java Standard Library; Used To Create Random Object
 
 // The Breakout Class Extends Application Class; The Main Entry Point For JavaFX Applications
-public class Breakout extends Application 
+public class Breakout extends Application
 {
     // Declaration Of Instance Variables For Game Properties
     private Stage primaryStage; // Primary Window Of JavaFX Application
@@ -79,12 +79,12 @@ public class Breakout extends Application
                 quitButton.setLayoutY(SCREEN_HEIGHT / 2);
 
                 // When Play Again Button Is Pressed, Close Current Window, And Start New Window
-                playAgainButton.setOnAction(e -> {
+                playAgainButton.setOnAction(event -> {
                     primaryStage.close();
                     start(new Stage());
                 });
 
-                quitButton.setOnAction(e -> primaryStage.close()); // When Quit Button Is Pressed, Close Window
+                quitButton.setOnAction(event -> primaryStage.close()); // When Quit Button Is Pressed, Close Window
                 pane.getChildren().addAll(playAgainButton, quitButton);
             }
         });
